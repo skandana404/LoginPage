@@ -5,26 +5,33 @@ Before running the app, make sure these are installed on your system:
 1. Install Required Python Applications
    
  1.1 Python (3.x) 
+ 
  Download from: https://www.python.org/downloads/ 
+ 
  During installation, make sure to check the box that says: "Add Python to PATH" 
 
  1.2 pip (Python package installer) 
- Usually comes with Python. Otherwise install it  
+ 
+ Usually comes with Python. Otherwise install it 
+ 
  To check if it's available using syntax: pip --version
 
  1.3 Install Flask 
+ 
  Open Command Prompt and run: pip install flask 
  
-3. Install Text Editor / IDE  
+3. Install Text Editor / IDE
+   
 To write and edit your frontend files: VS Code  Recommended 
+
 • Recommended VS Code Extensions (Optional but Helpful)  is HTML CSS 
 Support  
 
- ## 🛠️ Tech Stack
+ ## Tech Stack
 
-- **Frontend**: HTML, CSS, Bootstrap
+- **Frontend**: HTML, CSS
 - **Backend**: Python (Flask)
-- **Database**: MySQL
+
 
 # Set Up the Project and Run Code
 
