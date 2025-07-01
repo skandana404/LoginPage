@@ -2,21 +2,26 @@ Create a Login Page using
  [HTML, CSS, Flask for backend] 
 # Prerequisites before starting 
 Before running the app, make sure these are installed on your system: 
-1. Install Required Python Applications 
+1. Install Required Python Applications
+   
 1.1 Python (3.x) 
 Download from: https://www.python.org/downloads/ 
 During installation, make sure to check the box that says: "Add Python to PATH" 
-1.2 pip (Python package installer) - Usually comes with Python. Otherwise install it  
-To check if it's available using syntax: pip --version 
+
+1.2 pip (Python package installer) 
+Usually comes with Python. Otherwise install it  
+To check if it's available using syntax: pip --version
+
 1.3 Install Flask 
 Open Command Prompt and run: pip install flask 
  
-2. Install Text Editor / IDE  
+3. Install Text Editor / IDE  
 To write and edit your frontend files: VS Code  Recommended 
 • Recommended VS Code Extensions (Optional but Helpful)  is HTML CSS 
 Support  
  
-# Set Up the Project and Run Code 
+# Set Up the Project and Run Code
+
 1. Create a folder structure in VS Code as follows: 
 • Folder Structure 
 login-app/ 
@@ -52,22 +57,17 @@ Use the following dummy credentials to log in:
 • Password: password123 
  
  
- 
- 
- 
- 
- 
 # Flask (Python Backend) APIs and Methods 
  
 Line	Type	                                            Purpose
-Flask(__name__)	                                            Initialization	Creates a Flask app instance
-@app.route('/')	API Route	                                Defines API endpoint at / that accepts default GET requests
-@app.route('/login', methods=['POST'])	                    API Route	Defines API endpoint at /login that accepts POST requests
-def home(): and def login():	                            Method	Python functions are called when the above API routes are hit
-render_template('login.html')	                            Flask Method	Renders an HTML file from the templates folder
-request.form['username']	                                Flask Method	Retrieves form data sent via POST request for username
-request.form['password']	                                Flask Method	Retrieves form data sent via POST request for password
-app.run(debug=True)	                                        Flask Method	Starts the Flask development server with debug mode 
+Flask(__name__)	 ---------------------------------->  Initialization	Creates a Flask app instance
+@app.route('/')	API Route	--------------------------> Defines API endpoint at / that accepts default GET requests
+@app.route('/login', methods=['POST']) -------------> API Route	Defines API endpoint at /login that accepts POST requests
+def home(): and def login(): -----------------------> Method	Python functions are called when the above API routes are hit
+render_template('login.html')	----------------------> Flask Method	Renders an HTML file from the templates folder
+request.form['username'] ---------------------------> Flask Method	Retrieves form data sent via POST request for username
+request.form['password']	---------------------------> Flask Method	Retrieves form data sent via POST request for password
+app.run(debug=True)	     ---------------------------> Flask Method	Starts the Flask development server with debug mode 
  
 # Functionality 
  
@@ -87,7 +87,13 @@ o Shows a success message (Welcome, admin!) if credentials are correct.
 o Shows a failure message (Invalid username or password.) if credentials are 
 incorrect. 
  
-# Planned Features - User registration system - Database-backed authentication - Secure password hashing, prevents exposing actual passwords - Session-based login and logout - Flash messages for user feedback - Forgot password and email verification 
+# Planned Features 
+- User registration system
+- Database-backed authentication
+- Secure password hashing, prevents exposing actual passwords
+- Session-based login and logout
+ - Flash messages for user feedback
+  - Forgot password and email verification 
  
 # Workflow 
 1. User opens the application 
