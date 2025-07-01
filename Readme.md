@@ -4,16 +4,16 @@ Create a Login Page using
 Before running the app, make sure these are installed on your system: 
 1. Install Required Python Applications
    
-1.1 Python (3.x) 
-Download from: https://www.python.org/downloads/ 
-During installation, make sure to check the box that says: "Add Python to PATH" 
+ 1.1 Python (3.x) 
+ Download from: https://www.python.org/downloads/ 
+ During installation, make sure to check the box that says: "Add Python to PATH" 
 
-1.2 pip (Python package installer) 
-Usually comes with Python. Otherwise install it  
-To check if it's available using syntax: pip --version
+ 1.2 pip (Python package installer) 
+ Usually comes with Python. Otherwise install it  
+ To check if it's available using syntax: pip --version
 
-1.3 Install Flask 
-Open Command Prompt and run: pip install flask 
+ 1.3 Install Flask 
+ Open Command Prompt and run: pip install flask 
  
 3. Install Text Editor / IDE  
 To write and edit your frontend files: VS Code  Recommended 
@@ -24,12 +24,7 @@ Support
 
 1. Create a folder structure in VS Code as follows: 
 • Folder Structure 
-login-app/ 
-├── app.py 
-├── templates/ 
-│   └── login.html 
-├── static/ 
-│   └── style.css 
+<pre> ``` login-app/ ├── app.py ├── templates/ │ └── login.html ├── static/ │ └── style.css ``` </pre>
  
  
 2. Check whether the prerequisites are installed  
@@ -61,12 +56,19 @@ Use the following dummy credentials to log in:
  
 Line	Type	                                            Purpose
 Flask(__name__)	 ---------------------------------->  Initialization	Creates a Flask app instance
+
 @app.route('/')	API Route	--------------------------> Defines API endpoint at / that accepts default GET requests
+
 @app.route('/login', methods=['POST']) -------------> API Route	Defines API endpoint at /login that accepts POST requests
+
 def home(): and def login(): -----------------------> Method	Python functions are called when the above API routes are hit
+
 render_template('login.html')	----------------------> Flask Method	Renders an HTML file from the templates folder
+
 request.form['username'] ---------------------------> Flask Method	Retrieves form data sent via POST request for username
+
 request.form['password']	---------------------------> Flask Method	Retrieves form data sent via POST request for password
+
 app.run(debug=True)	     ---------------------------> Flask Method	Starts the Flask development server with debug mode 
  
 # Functionality 
