@@ -19,7 +19,13 @@ Before running the app, make sure these are installed on your system:
 To write and edit your frontend files: VS Code  Recommended 
 • Recommended VS Code Extensions (Optional but Helpful)  is HTML CSS 
 Support  
- 
+
+ ## 🛠️ Tech Stack
+
+- **Frontend**: HTML, CSS, Bootstrap
+- **Backend**: Python (Flask)
+- **Database**: MySQL
+
 # Set Up the Project and Run Code
 
 1. Create a folder structure in VS Code as follows: 
