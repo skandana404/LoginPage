@@ -2,7 +2,7 @@ Create a Login Page using
  [HTML, CSS, Flask for backend] 
 # Prerequisites before starting 
 Before running the app, make sure these are installed on your system: 
-# 1. Install Required Python Applications
+## 1. Install Required Python Applications
    
  1.1 Python (3.x) 
  
@@ -20,14 +20,14 @@ Before running the app, make sure these are installed on your system:
  
  Open Command Prompt and run: pip install flask 
  
-# 2. Install Text Editor / IDE
+## 2. Install Text Editor / IDE
    
 To write and edit your frontend files: VS Code  Recommended 
 
 • Recommended VS Code Extensions (Optional but Helpful)  is HTML CSS 
 Support  
 
- ## Tech Stack
+ # Tech Stack
 
 - **Frontend**: HTML, CSS
 - **Backend**: Python (Flask)
